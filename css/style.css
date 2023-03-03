@@ -123,6 +123,75 @@
 
 /* donateNow section end */
 
+/* donation plan section start */
+.donation {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.donationDescription {
+    margin-bottom: 50px;
+}
+.donationDescription h2 {
+    font-size: 42px;
+    font-weight: bold;
+}
+.donationDescription p {
+    color: #828282;
+    width: 30%;
+    margin: 20px auto;
+}
+
+.donationPlans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    
+}
+.donationPlan {
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+.donationPlan:first-child {
+    background-color: #aee3ff52;
+}
+.donationPlan:nth-child(2) {
+
+    background-color: #fedeff85;
+}
+.donationPlan:last-child {
+    background-color: #aee3ff52;
+}
+.donationPlan img {
+    width: 60px;
+    height: 60px;
+}
+.donationPlan h3 {
+    text-transform: capitalize;
+    font-size: 24px;
+    margin: 40px 0 20px 0;
+    transition: all .5s ease-in-out;
+}
+.donationPlan:hover h3 {
+    letter-spacing: .7px;
+}
+.donationPlan p {
+    text-align: justify;
+    color: #828282;
+}
+/* donation plan section end */
+
+
+
+
+
 
 
 
@@ -145,6 +214,17 @@
     /* donateNow section end */
 
 }
+
+@media (max-width: 1150.99px) {
+
+    /* donation Plan section start */
+    .donationPlan {
+        width: 300px;
+        height: 300px;
+    }
+    /* donation plan section end */
+
+}
 @media (max-width: 1100.99px) {
 
     /* donateNow section start */
@@ -159,7 +239,18 @@
     }
     /* donateNow section end */
 
+    /* donation Plan section start */
+    .donationPlans {
+        grid-template-columns: repeat(2, 1fr);
+            
+    }
+    .donationDescription p {
+        width: 50%;
+    }
+    /* donation plan section end */
+
 }
+
 @media (max-width: 800.99px) {
 
     /* donateNow section start */
@@ -205,6 +296,18 @@
         width: 90%;
     }
     /* donateNow section end */
+
+    /* donation Plan section start */
+    .donationPlans {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .donationDescription h2 {
+        font-size: 32px;
+    }
+    .donationDescription p {
+        width: 90%;
+    }
+    /* donation plan section end */
 
 }
 /* media query end  */
