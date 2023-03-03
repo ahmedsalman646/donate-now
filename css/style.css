@@ -6,7 +6,7 @@
 
 /* header section start */
 .headerSection {
-    background-image: url("/images/donation.jpg");
+    background-image: url("../images/donation.jpg");
     height: 600px;
     background-repeat: no-repeat;
     background-position: center;
@@ -78,13 +78,13 @@
     gap: 50px;
 }
 .donateAmount p {
-    background-color: #b9f3fc3d;
+    background-color: #b9f3fc19;
     padding: 30px 80px;
     display: inline-block;
     border-radius: 7px;
     font-size: 34px;
     cursor: pointer;
-    box-shadow: 0px 4px 40px rgb(0 0 0 / 10%);
+    box-shadow: 0px 4px 40px rgb(0 0 0 / 7%);
     border: 1px solid #b9f3fc74;
     transition: all .5s ease-in-out;
 }
@@ -92,6 +92,7 @@
     transform: scale(1.1);
     letter-spacing: .5px;
     border: 1px solid #AEE2FF;
+    background-color: #b9f3fc33;
 }
 #populerAmount {
     transform: scale(1.1);
