@@ -95,7 +95,7 @@
     background-color: #b9f3fc33;
 }
 #populerAmount {
-    transform: scale(1.1);
+    transform: scale(1.07);
     letter-spacing: .5px;
     border: 1px solid #93C6E7;
 }
@@ -145,19 +145,17 @@
 .donationPlans {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     justify-items: center;
     
 }
 .donationPlan {
-    width: 350px;
-    height: 300px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    padding: 0 20px;
+    padding: 60px 25px;
 }
 .donationPlan:first-child {
     background-color: #aee3ff52;
@@ -242,11 +240,14 @@
 
     /* donateNow section start */
     .donate {
-        grid-template-columns: repeat(4, 1fr);
-        padding: 0 150px;
-        gap: 30px;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 0 100px;
+        gap: 20px;
     }
-
+    .donateAmount p {
+        width: 100%;
+        padding: 20px;
+    }
     .donateDescription p {
         width: 50%;
     }
@@ -264,39 +265,33 @@
 
 }
 
-@media (max-width: 1150.99px) {
 
-    /* donation Plan section start */
-    .donationPlan {
-        width: 300px;
-        height: 300px;
-    }
-    /* donation plan section end */
-
-}
 @media (max-width: 1100.99px) {
 
     /* donateNow section start */
     .donate {
         grid-template-columns: repeat(3, 1fr);
         padding: 0 100px;
-        gap: 20px;
+        gap: 10px;
     }
-
+ 
+    .donateAmount p {
+        width: 100%;
+    }
     .donateDescription p {
         width: 70%;
     }
     /* donateNow section end */
 
     /* donation Plan section start */
-    .donationPlans {
-        grid-template-columns: repeat(2, 1fr);
-            
-    }
     .donationDescription p {
         width: 50%;
     }
-    /* donation plan section end */
+    .donationPlan {
+        padding: 30px 10px;
+    }
+    /* donation plan section end */    
+
     /* contributeSection start */
     .contributeDetails {
         width: 380px;
@@ -315,18 +310,21 @@
 
     /* donateNow section start */
     .donate {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0 50px;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 10px;
     }
 
-    .donateDescription p {
+    .donateAmount p {
         width: 90%;
+        padding: 10px;
+        font-size: 32px;
     }
 
     .donateOtherAmount input {
-        width: 70%;
+        width: 90%;
     }
     /* donateNow section end */
+
 
 }
 
@@ -349,11 +347,13 @@
 
     /* donateNow section start */
     .donate {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 0;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px;
     }
     .donateAmount p {
-        width: 90%;
+        width: 100%;
+        padding: 10px;
+        font-size: 24px;
     }
     .donateOtherAmount input {
         width: 90%;
@@ -361,17 +361,15 @@
     /* donateNow section end */
 
     /* donation Plan section start */
+    .donationDescription p {
+        width: 90%;
+    }
     .donationPlans {
         grid-template-columns: repeat(1, 1fr);
-    }
-    .donationPlan {
-        width: 90%;
+        gap: 20px;
     }
     .donationDescription h2 {
         font-size: 32px;
-    }
-    .donationDescription p {
-        width: 90%;
     }
     /* donation plan section end */
     /* contributeSection start */
