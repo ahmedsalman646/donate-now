@@ -188,6 +188,45 @@
 }
 /* donation plan section end */
 
+/* contributeSection start */
+.contributeSection {
+    background-color: #b9f3fc10;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.contributeDetails {
+    width: 720px;
+    margin: 0 auto;
+}
+.contributeDetails h2 {
+    font-size: 42px;
+}
+.contributeDetails p {
+    margin: 30px 0 50px 0;
+    width: 90%;
+    color: #828282;
+}
+
+.contributeImg {
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    width: 720px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.contributeImg img {
+    width: 100%;
+    border-radius: 20px;
+    transition: all .9s ease-in-out;
+}
+.contributeImg:hover img {
+    transform: scale(1.5);
+}
+/* contributeSection end */
 
 
 
@@ -212,6 +251,16 @@
         width: 50%;
     }
     /* donateNow section end */
+
+    /* contributeSection start */
+    .contributeDetails {
+        width: 520px;
+    }
+
+    .contributeImg {
+        width: 520px;
+    }
+    /* contributeSection end */
 
 }
 
@@ -248,6 +297,17 @@
         width: 50%;
     }
     /* donation plan section end */
+    /* contributeSection start */
+    .contributeDetails {
+        width: 380px;
+    }
+    .contributeDetails h2 {
+        font-size: 32px;
+    }    
+    .contributeImg {
+        width: 380px;
+    }
+    /* contributeSection end */
 
 }
 
@@ -292,6 +352,9 @@
         grid-template-columns: repeat(1, 1fr);
         padding: 0;
     }
+    .donateAmount p {
+        width: 90%;
+    }
     .donateOtherAmount input {
         width: 90%;
     }
@@ -301,6 +364,9 @@
     .donationPlans {
         grid-template-columns: repeat(1, 1fr);
     }
+    .donationPlan {
+        width: 90%;
+    }
     .donationDescription h2 {
         font-size: 32px;
     }
@@ -308,6 +374,22 @@
         width: 90%;
     }
     /* donation plan section end */
+    /* contributeSection start */
+    .contributeSection {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .contributeDetails {
+        width: 90%;
+    }
+    .contributeDetails h2 {
+        font-size: 32px;
+    }    
+    .contributeImg {
+        width: 90%;
+        margin-top: 30px;
+    }
+    /* contributeSection end */
 
 }
 /* media query end  */
