@@ -188,12 +188,13 @@
 
 /* contributeSection start */
 .contributeSection {
-    background-color: #b9f3fc10;
+    background-color: #b9f3fc3d;
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
+    padding: 30px 0;
 }
 
 .contributeDetails {
@@ -225,6 +226,51 @@
     transform: scale(1.5);
 }
 /* contributeSection end */
+
+
+/* getOurUpdateSection start */
+.getOurUpdateSection {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.getOurUpdate h2 {
+    font-size: 42px;
+}
+.getOurUpdate p {
+    margin: 20px auto 40px auto;
+    width: 30%;
+    color: #828282;
+}
+
+.getUpdate {
+    width: 50%;
+    margin: 0 auto;
+}
+.update {
+    display: inline-block;
+    background-color: #FEDEFF;
+    border-radius: 20px;
+    width: 100%;
+    padding: 40px 20px;
+}
+.getUpdate input {
+    padding: 10px 40px;
+    border: 1px solid #B9F3FC;
+    border-radius: 30px;
+    color: #828282;
+    transition: all .5s ease-in-out;
+    margin-right: 10px;
+}
+.getUpdate input:focus {
+    outline: none;
+    border: 1px solid #93C6E7;
+}
+#updateButton:hover {
+    letter-spacing: normal;
+}
+/* getOurUpdateSection end */
+
 
 
 
@@ -306,6 +352,17 @@
 
 }
 
+@media (max-width: 1024.99px) {
+    /* getOurUpdateSection start */
+
+    .getUpdate {
+        width: 80%;
+    }
+    .getOurUpdate p {
+        width: 50%;
+    }
+}
+
 @media (max-width: 800.99px) {
 
     /* donateNow section start */
@@ -381,13 +438,31 @@
         width: 90%;
     }
     .contributeDetails h2 {
-        font-size: 32px;
+        font-size: 28px;
     }    
     .contributeImg {
         width: 90%;
         margin-top: 30px;
     }
     /* contributeSection end */
+
+    /* getOurUpdateSection start */
+    
+    .getOurUpdate h2 {
+        font-size: 32px;
+    }
+    .getUpdate {
+        width: 90%;
+    }
+    .update input {
+        /* margin-bottom: 20px; */
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+    .getOurUpdate p {
+        width: 90%;
+    }
+    /* getOurUpdateSection end */
 
 }
 /* media query end  */
