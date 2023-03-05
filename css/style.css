@@ -271,7 +271,20 @@
 }
 /* getOurUpdateSection end */
 
-
+/* footer section start */
+footer {
+    text-align: center;
+    background-color: #93c5e732;
+    padding: 80px 10px;
+}
+footer h4 {
+    font-size: 24px;
+}
+footer h4>small {
+    color: #828282;
+    font-size: 14px;
+}
+/* footer section end */
 
 
 
@@ -463,6 +476,19 @@
         width: 90%;
     }
     /* getOurUpdateSection end */
+
+    /* footer section start */
+    footer {
+        padding: 40px 10px;
+    }
+    footer h4 {
+        font-size: 16px;
+    }
+    footer h4>small {
+        color: #828282;
+        font-size: 12px;
+    }
+    /* footer section end */
 
 }
 /* media query end  */
